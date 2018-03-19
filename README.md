@@ -1,8 +1,10 @@
-## Welcome to GitHub Pages
+# Maths of game balance and infinite progression
 
-You can use the [editor on GitHub](https://github.com/dynamiczero99/Maths-of-game-balance-and-infinite-progression/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am [Joel Cabaco Pérez](https://www.linkedin.com/in/joel-cabaco-6074a8160/), student of the
+[Bachelor’s Degree in
+Video Games by UPC at CITM](https://www.citm.upc.edu/ing/estudis/graus-videojocs). This content is generated for the second year’s
+subject Project 2, under supervision of lecturer
+[Ricard Pillosu](https://es.linkedin.com/in/ricardpillosu).
 
 ### Markdown
 
