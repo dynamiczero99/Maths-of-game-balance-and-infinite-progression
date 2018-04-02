@@ -6,5 +6,8 @@ Video Games by UPC at CITM](https://www.citm.upc.edu/ing/estudis/graus-videojocs
 subject Project 2, under supervision of lecturer
 [Ricard Pillosu](https://es.linkedin.com/in/ricardpillosu).
 
+In this web page I'm going to explain the concept of game balance and give information on the topic in order to make not only more enjoyable games, but also to make them adapt to our vision of the project and our game pillars.
+
+
 
 ----------
