@@ -38,7 +38,7 @@ Game balance is a really complex topic. Usually when we balance a game we try to
 
 - Setting/feel: Depending on the setting, you may aim for realistic or surrealistic approaches to movement. For example, a game set in World War II will have the player jump like a regular human would, but if you establish your player in, say, outer space, you may want to have a different gravitational force, changing the height and speed of the jump. The feel also takes part in this, because you may have characters that are set in a space where "regular physics" would apply, but for gameplay reasons you modify them so that they end up being less realistic. A good example for this is the difference in mechanics between Fortnite and PUBG.
 
-
+<img src="/CheeryOrnateBellfrog-size_restricted.gif" alt="hi" class="inline"/>
 
 - Target audience: When balancing your game, you will have to take into account what your playerbase will be. Thus, you can set the game's numbers to better fit the experience you want for your players. There are a lot of ways to do this, and we will delve deeper into this later. 
 
