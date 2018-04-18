@@ -42,7 +42,7 @@ Game balance is a really complex topic. Usually when we balance a game we try to
 
 - Setting/feel: Depending on the setting, you may aim for realistic or surrealistic approaches to movement. For example, a game set in World War II will have the player jump like a regular human would, but if you establish your player in, say, outer space, you may want to have a different gravitational force, changing the height and speed of the jump. The feel also takes part in this, because you may have characters that are set in a space where "regular physics" would apply, but for gameplay reasons you modify them so that they end up being less realistic. A good example for this is the difference in mechanics between Fortnite and PUBG.
 
-<img src="/CheeryOrnateBellfrog-size_restricted.gif" alt="hi" class="inline"/>
+![](https://gph.is/2vnBMst.gif)
 
 Fighting Games and RTS Games usually are not that affected by this, because the gameplay needs characters to jump, move or attack in very strange and surrealistic ways.
 
