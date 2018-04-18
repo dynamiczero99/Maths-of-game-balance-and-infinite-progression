@@ -8,6 +8,23 @@ subject Project 2, under supervision of lecturer
 
 In this web page I'm going to explain the concept of game balance and give information on the topic in order to make not only more enjoyable games, but also to make them adapt to our vision of the project and our game pillars.
 
+## Index
+
+* [What is game balance?](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#what-is-game-balance?)
+* [Common terms and concepts](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#common-terms-and-concepts)
+  * [Determinism](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#determinism)
+  * [Transitive and intransitive games](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#transitive-and-intransitive-games)
+  * [Solution](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#solution)
+  * [Randomness](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#randomness)
+    * [Gaussian Bells and how to handle randomness](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#gaussian-bells-and-how-to-handle-randomness)
+    * [Computer generated randomness, seeds, and how to save](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#computer-generated-randomness,-seeds,-and-how-to-save)
+* [How to balance a game](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#how-to-balance-a-game)
+  * [Luck vs Skill](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#luck-vs-skill)
+  * [Dominant Strategies](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#dominant-strategies)
+  * [Situational Balance](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#situational balance)
+* [Infinite Progression](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#infinite-progression)
+* [Webgraphy and references](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#webgraphy-and-references)
+
 ## What is game balance?
 
 Game balance is the process where developers modify the numbers of the system of the game in order to fit a specific purpose. When a game is perfectly balanced, all of the participants in the game have exactly the same resources at hand, and the game is equally fair. An example of a perfectly balanced game, which are called _symmetric games_, would be Pong, because if both players have the exact same level of skill, each of them will have equal chances of winning. Games like Chess may seem to be symmetric, but in fact they are not, because whoever goes first will have an advantage over the other player. A way to balance these games would be what Go does; adding a certain number of points (in most rules, between 5 and 7) to the player with the white stones. This is because through calculations that we will further see in this topic, the first move advantage of the player with black stones is usually equal to those 5 to 7 points.
