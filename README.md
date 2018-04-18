@@ -181,6 +181,10 @@ Game Balance Concepts by Ian Schreiber: https://gamebalanceconcepts.wordpress.co
 
 RANDOM.ORG - Introduction to Randomness and Random Numbers: https://www.random.org/randomness/
 
+Perfect Imbalance by Extra Credits: https://www.youtube.com/watch?v=e31OSVZF77w
+
+Gaussian Curve Demonstration in Galton Board by IFA.tv: https://www.youtube.com/watch?v=AUSKTk9ENzg
+
 Wikipedia:
 * Transitive Relations: https://en.wikipedia.org/wiki/Transitive_relation
 * Normal Distribution: https://en.wikipedia.org/wiki/Normal_distribution
