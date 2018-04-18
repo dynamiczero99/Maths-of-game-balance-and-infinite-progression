@@ -21,7 +21,7 @@ In this web page I'm going to explain the concept of game balance and give infor
 * [How to balance a game](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#how-to-balance-a-game)
   * [Luck vs Skill](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#luck-vs-skill)
   * [Dominant Strategies](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#dominant-strategies)
-  * [Situational Balance](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#situational balance)
+  * [Situational Balance](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#situational-balance)
 * [Infinite Progression](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#infinite-progression)
 * [Webgraphy and references](https://dynamiczero99.github.io/Maths-of-game-balance-and-infinite-progression/#webgraphy-and-references)
 
