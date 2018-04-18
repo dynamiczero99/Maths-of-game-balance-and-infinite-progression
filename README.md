@@ -146,4 +146,16 @@ Here is a video from ExtraCredits that explains the topic really well.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e31OSVZF77w" frameborder="0" allowfullscreen></iframe>
 
+## Infinite progression
+
+Infinite progression is a ways that developers have to make players stay with the game, because they feel a need to accomplish something, even if the reward of the accomplishment is rather trivial. There are a number of ways to obtain this feat.
+
+- Multiple Level Progressions: Most non-RPG games have adopted the typical leveling system in order for players to stay on the game. But having multiple progressions makes the time that players spend even larger. Games like Call of Duty , for example, use a leveling system on their multiplayer mode, where once a player gets to the maximum possible level, he can get back to level 1 but go up a "prestige" level. With 15 prestige levels, this makes the "game time" 15 times longer.
+
+- New Game+: In some cases, after the game ends and the credits roll, players can choose to begin a new game keeping what they had on their last save. This can be used in many ways, for example in Ratchet and Clank for PS4 the NG+ mode is just for the player to play again but with all the possible weapons, thus getting to feel more powerful. But in other cases, it can be used as a game time extending tool. By having some feats only possible to achieve in multiple playthroughs, we can incite the player to play the game multiple times, thus extending the time he spends playing. Some feats can be multiple endings, collectables, and extra difficulty settings (that only unlock after the game is completed once).
+
+- Achievements/Trophies: Getting awarded for a feat is a satisfying experience. This does not apply for all players, but some may stick longer with the game by trying to get every achievement (100%ing the game), so having a large achievement list can help.
+
+- Constant Updates: In the recent years, games have been shifting to be more a service than a product. This means that games keep getting patches and updates after its initial release, which increases the game's extension. Trying to get every character in League of Legends can be an ordeal, when a character is released every 2-3 months, or getting every skin in Warframe, a game that gets weekly updates with new items and characters.
+
 ----------
