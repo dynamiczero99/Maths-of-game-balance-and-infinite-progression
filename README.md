@@ -116,11 +116,15 @@ Something that you should avoid in your game is to have a "dominant strategy", a
 
 ![](Ability_Screen_KHII.png)
 
+_Kingdom Hearts II has an ability system where some abilities are useless or really situationally better than others (more on situational balance later). This creates the dominant strategy where players will only use the abilities which give a longer combo. In hard/expert mode, though, bosses can only be killed by the last hit of a combo, so the dominant strategy is to use a 1-hit only attack rather than what the normal mode teaches you._
+
 This hurts the gameplay so much because, first of all, a player that knows this will always have an advantage over a newcomer or just someone who doesn't know that, but also making an item much better than the other makes the last one essentially useless, and why would you want to give an option to players if one is clearly better and eventually no one will pick the weaker one? The only case where this can be used is when you want the players to solve a certain part of the game to advance forward or get some loot, for example. You can award them for taking the better choice, as if it was a puzzle.
 
 Now, having dominant strategies is something that is bound to happen, and really hard to avoid if your game system is complex and elaborated. This is why multiplayer games keep releasing patches constantly to balance the game: they tend to have really deep and/or extensive game systems, and checking every possible combination in order to find what could possibly be a dominant strategy would be time consuming. The way to adress this problem is by testing and/or getting feedback from players, or maybe just simply watch them play. In your fighting game, is there any move that players tend to spam, and feels really powerful? Think of a countermeasure to that attack, maybe it can be blocked and its recovery is so long that you can get attacked first, or maybe there is a special move that can counter it. Then, maybe that special move is what gets spammed, so think of a countermeasure to that, too. Eventually, you will have a system with intransitive mechanics: all of the movements have the same (or a really similar) value, because each one has balanced strengths and weaknesses.
 
 ![](sun-and-moon-type-chart-2.jpg)
+
+_A somewhat balanced mechanic example from Pokémon Sun and Moon (Game Freak, 2016). All types have similar resistances, weaknesses, advantages and disadvantages in relation to other types._
 
 ### Situational Balance
 
@@ -135,6 +139,8 @@ In some cases, we can even give numerical values to the benefits that an option 
 However, there are times where we don't want both sides to be equally powered, and that's where perfect imbalance gets into play.
 
 ![](evolve-screen-1.0.jpg)
+
+_Evolve (Turtle Rock Studios, 2015), has 4 players playing as soldiers with the objective to kill a fifth player, which controls a much more powerful, giant monster_
 
 Here is a video from ExtraCredits that explains the topic really well.
 
