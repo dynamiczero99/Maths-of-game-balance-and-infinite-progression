@@ -140,7 +140,7 @@ However, there are times where we don't want both sides to be equally powered, a
 
 ![](evolve-screen-1.0.jpg)
 
-_Evolve (Turtle Rock Studios, 2015), has 4 players playing as soldiers with the objective to kill a fifth player, which controls a much more powerful, giant monster_
+_Evolve (Turtle Rock Studios, 2015), has 4 players playing as soldiers with the objective to kill a fifth player, which controls a much more powerful, giant monster._
 
 Here is a video from ExtraCredits that explains the topic really well.
 
