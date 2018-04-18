@@ -18,11 +18,11 @@ When talking about game balance, we will be using some specific, technical terms
 
 ### Determinism
 
-Determinism refers to which kind of results can we expect from each move in the game. A _deterministic_ game would be one where any possible move always has the same result, there is not any kind of randomness involved on its execution, like Chess or Space Invaders, where enemies follow always the same pattern. On the other hand, _non-deterministic_ games will be affected by a roll of a random number in order to determine a result. Examples of non-deterministic games would be Parchís, where every move you do is affected by a dice roll, or Pokémon, which has many mechanics that rely on chances (an electric move with a 30% chance of paralyzing, an attack with a 15% critical hit chance...). A fast way to check if a game is or not deterministic is to check if, by having the game in its initial state, and being told every move that has been made in a match, you can recreate the exact same game state that match is right now. When that happens, a game is entirely deterministic.
+Determinism refers to which kind of results can we expect from each move in the game. A _deterministic_ game would be one where any possible move always has the same result, there is not any kind of randomness involved on its execution, like Chess or Space Invaders, where enemies follow always the same pattern. On the other hand, _non-deterministic_ games will be affected by a roll of a random number in order to determine a result. Examples of non-deterministic games would be Parchís, where every move you do is affected by a dice roll, or Pokémon, which has many mechanics that rely on chances (an electric move with a 30% chance of paralyzing, an attack with a 15% critical hit chance...). A fast way to check if a game is or not deterministic is if, by having the game in its initial state, and being told every move that has been made in a match, you can recreate the exact same game state that match is right now. When that happens, a game is entirely deterministic.
 
 ### Transitive and intransitive games
 
-A game's transitivity is determined by the "value" each possible option has. In math, intransitivity refers to The game is intransitive if all of the options are equally valuable, that is, that they have all the same chance of winning. In Rock, Paper, Scissors, we can calculate if the game is intransitive by computing the amount of possible outcomes that each move has. Rock can tie against rock (0), win againts scissors (+1) or lose against paper (-1). By adding 0+1-1 we get 0. The same goes for paper and scissors. The value of each option is exactly the same, so we can say that the game is intransitive.
+A game's transitivity is determined by the "value" each possible option has. The game is intransitive if all of the options are equally valuable, that is, that they have all the same chance of winning. In Rock, Paper, Scissors, we can calculate if the game is intransitive by computing the amount of possible outcomes that each move has. Rock can tie against rock (0), win againts scissors (+1) or lose against paper (-1). By adding 0+1-1 we get 0. The same goes for paper and scissors. The value of each option is exactly the same, so we can say that the game is intransitive.
 
 ### Solution
 
@@ -46,7 +46,11 @@ Game balance is a really complex topic. Usually when we balance a game we try to
 
 Fighting Games and RTS Games usually are not that affected by this, because the gameplay needs characters to jump, move or attack in very strange and surrealistic ways.
 
+![](/Flashback06.jpg)
+
 - Target audience: When balancing your game, you will have to take into account what your playerbase will be. Thus, you can set the game's numbers to better fit the experience you want for your players. There are a lot of ways to do this, and we will delve deeper into this later. 
+
+![](The-Best-Video-Game-Consoles-for-Kids.png)
 
 - Fairness: It should go without saying that difficulty is the easiest thing to create for a game, but what is truly challenging is to create a good and fair difficulty. The typical terms "you suck at this game" or "git gud" should never be on the designer's mouth when adressing players/testers. The game has to feel good and nice to play. This does not mean to make a game easy, because that can lead to boredom and eventually to your player to stop playing the game. What designers should aim for is to entertain, not to set up impossible challenges so that the game is tagged as "difficult".
 
@@ -60,8 +64,30 @@ In order to raise the amount of skill required to win in a game, we can substrac
 
 Something that you should avoid in your game is to have a "dominant strategy", a "best move". For instance, you can have 2 items on a game, one gives you +30 max health, and the other one +30 resistance. If we know that the formula for damage is, say: damage = attack - 0.7 x resistance, we can calculate how much of that resistance fares as "effective" health. In the end, that's what it is, resistance keeps you from being harmed, therefore it's like having more health. For each attack, the damage will be reduced by 21 points, so if the character is attacked twice, your deffense will mitigate 42 damage points. In only two attacks, the better resistance has already given us more effective health than the +30 health item. So, we can confirm that the +30 resistance item is considerably better than the +30 health one, therefore it's the dominant strategy, its the "solution" of this part of the game.
 
+
+
 This hurts the gameplay so much because, first of all, a player that knows this will always have an advantage over a newcomer or just someone who doesn't know that, but also making an item much better than the other makes the last one essentially useless, and why would you want to give an option to players if one is clearly better and eventually no one will pick the weaker one? The only case where this can be used is when you want the players to solve a certain part of the game to advance forward or get some loot, for example. You can award them for taking the better choice, as if it was a puzzle.
 
+
+
 Now, having dominant strategies is something that is bound to happen, and really hard to avoid if your game system is complex and elaborated. This is why multiplayer games keep releasing patches constantly to balance the game: they tend to have really deep and/or extensive game systems, and checking every possible combination in order to find what could possibly be a dominant strategy would be time consuming. The way to adress this problem is by testing and/or getting feedback from players, or maybe just simply watch them play. In your fighting game, is there any move that players tend to spam, and feels really powerful? Think of a countermeasure to that attack, maybe it can be blocked and its recovery is so long that you can get attacked first, or maybe there is a special move that can counter it. Then, maybe that special move is what gets spammed, so think of a countermeasure to that, too. Eventually, you will have a system with intransitive mechanics: all of the movements have the same (or a really similar) value, because each one has balanced strengths and weaknesses.
+
+### Situational Balance
+
+As we've seen, there are situations where we may end up having an option that is better than another. But how do we know this if the value of an option changes through time? In the last example about the different items, we know that the 30 resistance item is going to be better than the 30HP one, but only after two attacks, because the damage mitigated by resistance is superior to the health that the other item gives you. But, what if you only get attacked once? What if the resistance is only used against physical damage, while it still makes you vulnerable to magic spells? This is when we enter in situational balance.
+
+Situational balance is, theoretically, really easy to compute. Let's look at an example from the classic tabletop RPG Dungeons and Dragons. When attacking, the character has to roll a d20 to check if their attack hits or misses. The character's Hit Bonus (which depends on weapon type, player stats, etc, and is abbreviated as HB) is added to the roll, so a +3 attack bonus would make the player roll 1d20+3. If this roll outnumbers the target's Armor Class (AC), the attack hits, and the player does the appropriate roll to check the damage. So, +1 in AC will lower the hit chance by 5%, and +1 in HB will increase it by 5% (because we're using a d20, and 100%/20 = 5%). Which one of them is more valuable? Well, the short answer will be "it depends". The long answer will be: if you're outnumbered, HB will be more valuable because you will be needing it to fight more enemies. If you're in a party, and there is only one enemy, lowering its AC will make it more vulnerable to hits by you and your companions. If you're on a 1 versus 1 battle, both options are equally valuable. So going back to how to compute situational balance, we can take into account the situation that is most likely on our game, and balance the mechanic that way. 
+
+As a game designer, we can take profit of this. If you D&D campaign has the players fight large numbers of enemies, raising HB will be more useful than lowering AC, so you should reward players accordingly depending on the challenge you want them to overcome. Want to make the game hard? Raise the cost of an extra HB. Want to make them feel powerful and not frustrated by misses? Make HB really easy to obtain.
+
+In some cases, we can even give numerical values to the benefits that an option has, and balance the game accordingly. For example, the fire element in a game is strong against 30% of the enemies, and deals regular damage to the other 70%. Assume the average numerical value for an element is 100, and that being strong against an enemy doubles the damage. By calculating: 70 x 1 + 30 * 2, we get that the fire element has a value of 130. Let's say that now, 30% of enemies are resistant to fire, receiving only half of the damage. Then we could calculate 40 x 1 + 30 x 2 + 30 x 0.5, and get that the value of that element is 115. In this case, the enemy percentage that is weak to fire is the same as the one for enemies that resist it, but the value is still higher than the average. Why is this? This happens because the bonus damage we get by a 2x multiplier is higher than the reduced damage from a 0.5x multiplier. We can leave it as this, or make the bonus against a weak enemy 1.5x instead of 2x. If the player and the enemy use fire attacks about the same amount of times, leaving it 2x will make the game balanced in that aspect. On the other hand, if the player gets to attack with fire more times, the 2x multiplier will make him more powerful the enemy and have an advantage, and the other way around if enemies attack with fire more times than the players, because the attacking side will have the advantage. Reducing the bonus to 1.5x will make it equally balanced for both sides no matter who the attacking side is.
+
+However, there are times where we don't want both sides to be equally powered, and that's where perfect imbalance gets into play.
+
+
+
+Here is a video from ExtraCredits that explains the topic really well.
+
+
 
 ----------
