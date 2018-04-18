@@ -38,6 +38,8 @@ Dice rolls were later adapted into percentage probabilities. These are what is m
 
 A Gaussian Bell, or a Gaussian function, is a mathematical function that represents the amount of time a result has happened, and has a bell curve shape. What this function shows is that by having a random or pseudorandom system, we can predict the results that are going to happen more times. While the first results may seem completely random, eventually we will see that the values tend to group around a center. For a simpler explanation, if we throw 1d6 enough times, we will get more 3s and 4s that any other number. This is because the larger the number of rolls, the more the average of results will tend to the average of possible values. So, if we want to treat a random value in our game as a determined one, we can make the arithmetic average of all the possible values (or just the lower and upper one if we are working with a number interval), and use that value instead. If a player can earn between 6 and 10 HP when leveling up, we will treat that value as 8. If the random element is an event that is bound to happen randomly, such as a critical hit, we can assume that the probability is the amount of times it will happen. For a 25% crit chance, we will count 1 attack from every 4 as a crit.
 
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=e31OSVZF77w" frameborder="0" allowfullscreen></iframe>
+
 #### Computer generated randomness, seeds, and how to save
 
 Computers are deterministic machines. What I mean is that they are entities that convert some numbers into others, they have lots of 1s and 0s and convert them into other 1s and 0s. There is no way for them to generate a random, indetermined number, so how they handle this is by taking numbers from really erratic mathematic functions, which is not random but works. We call this a form of pseudorandomness, just like a shuffle of cards or a roulette spin or a dice roll: it's not entirely random, but it's close enough to be considered it. But which results from that function do they take, and in what order? This is where seeds come into play. A seed is the number that the sequence starts in, and then the function will keep on taking values using its formula. We usually make that seed be a value that is highly unlikely to be duplicated, like the milliseconds since midnight or the time since the app was started. So, if you play a game and by chance you get the same seed in two matches or game sessions, every random number will give the same result. Of course, the time you take a different action that requires a number to be generated, you will de-sync the generation and you will get the numbers that the other game had generated on the last query. How do we deal with this? There is no way to do it right, but there are different options to choose:
@@ -136,6 +138,6 @@ However, there are times where we don't want both sides to be equally powered, a
 
 Here is a video from ExtraCredits that explains the topic really well.
 
-![](https://www.youtube.com/watch?v=e31OSVZF77w)
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=e31OSVZF77w" frameborder="0" allowfullscreen></iframe>
 
 ----------
