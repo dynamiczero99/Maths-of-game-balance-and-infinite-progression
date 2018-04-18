@@ -175,6 +175,8 @@ Infinite progression is a ways that developers have to make players stay with th
 
 - Constant Updates: In the recent years, games have been shifting to be more a service than a product. This means that games keep getting patches and updates after its initial release, which increases the game's extension. Trying to get every character in League of Legends can be an ordeal, when a character is released every 2-3 months, or getting every skin in Warframe, a game that gets weekly updates with new items and characters.
 
+- Ranked/Competitive Play: Giving the game a competitive space can make players who have already reached max level strive for getting to a better "league" or "division", and thus he'll keep on playing and practicing. This method can be really healthy for the playerbase because it creates a will to overcome other players and get better at the game, which is a form of *real* progression. The downside is that competitiveness can also lead to toxicity by players.
+
 ## Webgraphy and references
 
 Game Balance Concepts by Ian Schreiber: https://gamebalanceconcepts.wordpress.com/
