@@ -40,11 +40,13 @@ A Gaussian Bell, or a Gaussian function, is a mathematical function that represe
 
 #### Computer generated randomness, seeds, and how to save
 
-Computers are deterministic machines. What I mean is that they are entities that convert some numbers into others, they have lots of 1s and 0s and convert them into other 1s and 0s. There is no way for them to generate a random, indetermined number, so how they handle this is by taking numbers from really erratic mathematic functions, which is not random but works. We call this a form of pseudorandomness, just like a shuffle of cards or a roulette spin or a dice roll: it's not entirely random, but it's close enough to be considered it. But which results from that function do they take, and in what order? This is where seeds come into play. A seed is the number that the sequence starts in, and then the function will keep on taking values using its formula. So, if you play a game and by chance you get the same seed in two matches or game sessions, every random number will give the same result. Of course, the time you take a different action that requires a number to be generated, you will de-sync the generation and you will get the numbers that the other game had generated on the last query. How do we deal with this? There is no way to do it right, but there are different options to choose:
+Computers are deterministic machines. What I mean is that they are entities that convert some numbers into others, they have lots of 1s and 0s and convert them into other 1s and 0s. There is no way for them to generate a random, indetermined number, so how they handle this is by taking numbers from really erratic mathematic functions, which is not random but works. We call this a form of pseudorandomness, just like a shuffle of cards or a roulette spin or a dice roll: it's not entirely random, but it's close enough to be considered it. But which results from that function do they take, and in what order? This is where seeds come into play. A seed is the number that the sequence starts in, and then the function will keep on taking values using its formula. We usually make that seed be a value that is highly unlikely to be duplicated, like the milliseconds since midnight or the time since the app was started. So, if you play a game and by chance you get the same seed in two matches or game sessions, every random number will give the same result. Of course, the time you take a different action that requires a number to be generated, you will de-sync the generation and you will get the numbers that the other game had generated on the last query. How do we deal with this? There is no way to do it right, but there are different options to choose:
 
 - Saving anywhere: Saving a game anywhere means that the player can just save before an important random roll and just keep reloading until the game gives him what he wants. It breaks the game's design, and is a really boring interaction with the game. Of course, if you're OK with that, you can use it.
 
 ![](/eftis5nega6x.jpg)
+
+_Skyrim (Bethesda, 2011) lets the player save at almost any point on the game, except if there are enemies nearby_
 
 - Saving anywhere, keep the seed saved: Doing this will solve the problem of re-rolling, because if the player is going to miss his objective, he will keep missing it because the generated number will be the same. A way around this may be to query another number by doing another random-requiring action, like attacking an enemy when there is critical chance. So, it's not that safe if your player knows what he's doing.
 
@@ -52,13 +54,29 @@ Computers are deterministic machines. What I mean is that they are entities that
 
 ![](capture_03012008_231748.jpg)
 
+_An example of a save point from Final Fantasy VII (Square, 1997). Save points have been the main method of saving from the first Final Fantasy up until FFXIII (with the exception of FFXI)._
+
 - Suspend save/Quicksave: This method consists on deleting the save right after you load, so there is no way to re-roll something. The downside to this is that if the game is not exited properly (the console/computer is turned off, the game crashes...), all progress is lost. To semi-solve this, you can make the player unable to reload a save he just loaded, but not eliminate it from the system memory. Thus, if the game is exited promptly, you can give him the option to reload from the last loaded save, but then again he might turn off the console manually to get his re-rolls.
 
 ![](Fire_Emblem_Shin_Monsho_no_Nazo_Hikari_to_Kage_no_Eiyu_en__19794.png.67f67d5c6a909fb4466da02d1f231651.png)
 
+_In Fire Emblem: Shin Monshō no Nazo/New Mystery of the Emblem (Intelligent Systems, 2010), during battles, you can only suspend the game. This is done for the earlier mentioned purpose, and for players not to be able to rearrange their troops in a better way if they fail initially._
+
 - Limiting saves: Associating saving with an in-game resource, like the ink ribbons in early Resident Evil games. The problem with this is that the player will then save more cautiously, and not always, so if he dies unexpectedly he might have to repeat a long part because there was no way to know that there was danger there. Unless the game tells them, which lowers the challenge by making the player know what to expect.
 
 ![](image.jpg)
+
+_A saving typewriter from Resident Evil (Capcom, 1996)_
+
+- No saves: Some games have no saving at all. This can be done in two ways. The first one is what was popular in NES and other third generation consoles, which is to have the player start over from the beginning or use a password. The second one is letting the player go out of the game whenever he wants, and then be in exactly the same spot when the game loads, so he hasn't got the ability to load whichever save. 
+
+![](4291495-6150563226-get_image.png)
+
+_NES and even some SNES games like Star Fox (Argonaut Software/Nintendo EAD, 1993) had no saving features, a system reminiscent of the arcade machines._
+
+![](bloodborne-how-to-kill-first-boss-cleric-beast-1024x576.jpg)
+
+_Souls games, like Bloodborne (From Software, 2015), autosave constantly and also when the player exits, and then deletes the save file on load._
 
 ## How to balance a game
 
@@ -68,13 +86,19 @@ Game balance is a really complex topic. Usually when we balance a game we try to
 
 ![](https://gph.is/2vnBMst.gif)
 
+_The Impulse Grenade fares better in Fortnite than PUBG because the latter aims for realism, so this kind of a mechanic strongly deviates from the intended game feel._
+
 Fighting Games and RTS Games usually are not that affected by this, because the gameplay needs characters to jump, move or attack in very strange and surrealistic ways.
 
 ![](/Flashback06.jpg)
 
+_The 2013 remake of Flashback (Delphine Software Entertainment, 1992) uses a realistic aesthetic but has a surrealist jumping height_
+
 - Target audience: When balancing your game, you will have to take into account what your playerbase will be. Thus, you can set the game's numbers to better fit the experience you want for your players. There are a lot of ways to do this, and we will delve deeper into this later. 
 
 ![](The-Best-Video-Game-Consoles-for-Kids.png)
+
+_Dark Souls (From Software, 2011), for instance, is not intended to be played by casual audiences._
 
 - Fairness: It should go without saying that difficulty is the easiest thing to create for a game, but what is truly challenging is to create a good and fair difficulty. The typical terms "you suck at this game" or "git gud" should never be on the designer's mouth when adressing players/testers. The game has to feel good and nice to play. This does not mean to make a game easy, because that can lead to boredom and eventually to your player to stop playing the game. What designers should aim for is to entertain, not to set up impossible challenges so that the game is tagged as "difficult".
 
