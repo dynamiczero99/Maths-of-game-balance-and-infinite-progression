@@ -38,7 +38,7 @@ Dice rolls were later adapted into percentage probabilities. These are what is m
 
 A Gaussian Bell, or a Gaussian function, is a mathematical function that represents the amount of time a result has happened, and has a bell curve shape. What this function shows is that by having a random or pseudorandom system, we can predict the results that are going to happen more times. While the first results may seem completely random, eventually we will see that the values tend to group around a center. For a simpler explanation, if we throw 1d6 enough times, we will get more 3s and 4s that any other number. This is because the larger the number of rolls, the more the average of results will tend to the average of possible values. So, if we want to treat a random value in our game as a determined one, we can make the arithmetic average of all the possible values (or just the lower and upper one if we are working with a number interval), and use that value instead. If a player can earn between 6 and 10 HP when leveling up, we will treat that value as 8. If the random element is an event that is bound to happen randomly, such as a critical hit, we can assume that the probability is the amount of times it will happen. For a 25% crit chance, we will count 1 attack from every 4 as a crit.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=e31OSVZF77w" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AUSKTk9ENzg" frameborder="0" allowfullscreen></iframe>
 
 #### Computer generated randomness, seeds, and how to save
 
