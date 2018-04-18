@@ -175,4 +175,16 @@ Infinite progression is a ways that developers have to make players stay with th
 
 - Constant Updates: In the recent years, games have been shifting to be more a service than a product. This means that games keep getting patches and updates after its initial release, which increases the game's extension. Trying to get every character in League of Legends can be an ordeal, when a character is released every 2-3 months, or getting every skin in Warframe, a game that gets weekly updates with new items and characters.
 
+## Webgraphy and references
+
+Game Balance Concepts by Ian Schreiber: https://gamebalanceconcepts.wordpress.com/
+
+RANDOM.ORG - Introduction to Randomness and Random Numbers: https://www.random.org/randomness/
+
+Wikipedia:
+* Transitive Relations: https://en.wikipedia.org/wiki/Transitive_relation
+* Normal Distribution: https://en.wikipedia.org/wiki/Normal_distribution
+
+
+
 ----------
