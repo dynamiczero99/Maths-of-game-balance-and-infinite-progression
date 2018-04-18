@@ -92,7 +92,7 @@ _The Impulse Grenade fares better in Fortnite than PUBG because the latter aims 
 
 Fighting Games and RTS Games usually are not that affected by this, because the gameplay needs characters to jump, move or attack in very strange and surrealistic ways.
 
-![](/Flashback06.jpg)
+![](Flashback06.jpg)
 
 _The 2013 remake of Flashback (Delphine Software Entertainment, 1992) uses a realistic aesthetic but has a surrealist jumping height_
 
