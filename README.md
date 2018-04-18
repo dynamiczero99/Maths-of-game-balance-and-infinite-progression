@@ -30,11 +30,35 @@ The solution of a game is the best action that can be taken in order to win it. 
 
 ### Randomness
 
-The term of randomness is really deep and has many subjects to study and take into account, but I will explain what is most useful to us as designers. The element of randomness comes from when board games were adapted into videogames, and they have been kept as a powerful tool that we can use to modify our games' system.
+The term of randomness is really deep and has many subjects to study and take into account, but I will explain what is most useful to us as designers. The element of randomness comes from when board games were adapted into videogames, and they have been kept as a powerful tool that we can use to modify our games' system. Every random element in a game can be seen as a dice roll. Dice rolls give an almost completely random number (assuming all the faces are even) depending on the faces it has. The more faces, the wider the range of randomness is. Dice rolls are notated as xdy + z, where x is the number of die rolled, y is the faces of said die and z a value that is kept constant. So, for example, 1d20 + 5 would give a random value between 6 and 25, and 2d8 + 2 would give a value between 4 and 18. However, as we'll see in just a moment, consecutive dice rolls tend to be less random, so rolling 1d12 would give a more random result than rolling 2d6.
+
+Dice rolls were later adapted into percentage probabilities. These are what is most common nowadays as probability notation, and are much easier to manipulate. We can say that an event has a 25% probabilty to happen, instead of saying that it happens when we roll a 1 in a 1d4 roll.
 
 #### Gaussian Bells and how to handle randomness
 
-A Gaussian Bell, or a Gaussian function, is a mathematical function that represents the amount of time a result has happened, and has a bell curve shape. What this function shows is that by having a random or pseudorandom system, we can predict the results that are going to happen more times. While the first results may seem completely random, eventually we will see that the values tend to group around a center. For a simpler explanation, if we throw a 6 faced dice enough times, we will get more 3s and 4s that any other number. This is because the larger the number of rolls, the more the average of results will tend to the average of possible values. So, if we want to treat a random value in our game as a determined one, we can make the arithmetic average of all the possible values (or just the lower and upper one if we are working with a number interval), and use that value instead. If a player can earn between 6 and 10 HP when leveling up, we will treat that value as 8. If the random element is an event that is bound to happen randomly, such as a critical hit, we can assume that the probability is the amount of times it will happen. For a 25% crit chance, we will count 1 attack from every 4 as a crit.
+A Gaussian Bell, or a Gaussian function, is a mathematical function that represents the amount of time a result has happened, and has a bell curve shape. What this function shows is that by having a random or pseudorandom system, we can predict the results that are going to happen more times. While the first results may seem completely random, eventually we will see that the values tend to group around a center. For a simpler explanation, if we throw 1d6 enough times, we will get more 3s and 4s that any other number. This is because the larger the number of rolls, the more the average of results will tend to the average of possible values. So, if we want to treat a random value in our game as a determined one, we can make the arithmetic average of all the possible values (or just the lower and upper one if we are working with a number interval), and use that value instead. If a player can earn between 6 and 10 HP when leveling up, we will treat that value as 8. If the random element is an event that is bound to happen randomly, such as a critical hit, we can assume that the probability is the amount of times it will happen. For a 25% crit chance, we will count 1 attack from every 4 as a crit.
+
+#### Computer generated randomness, seeds, and how to save
+
+Computers are deterministic machines. What I mean is that they are entities that convert some numbers into others, they have lots of 1s and 0s and convert them into other 1s and 0s. There is no way for them to generate a random, indetermined number, so how they handle this is by taking numbers from really erratic mathematic functions, which is not random but works. We call this a form of pseudorandomness, just like a shuffle of cards or a roulette spin or a dice roll: it's not entirely random, but it's close enough to be considered it. But which results from that function do they take, and in what order? This is where seeds come into play. A seed is the number that the sequence starts in, and then the function will keep on taking values using its formula. So, if you play a game and by chance you get the same seed in two matches or game sessions, every random number will give the same result. Of course, the time you take a different action that requires a number to be generated, you will de-sync the generation and you will get the numbers that the other game had generated on the last query. How do we deal with this? There is no way to do it right, but there are different options to choose:
+
+- Saving anywhere: Saving a game anywhere means that the player can just save before an important random roll and just keep reloading until the game gives him what he wants. It breaks the game's design, and is a really boring interaction with the game. Of course, if you're OK with that, you can use it.
+
+![](/eftis5nega6x.jpg)
+
+- Saving anywhere, keep the seed saved: Doing this will solve the problem of re-rolling, because if the player is going to miss his objective, he will keep missing it because the generated number will be the same. A way around this may be to query another number by doing another random-requiring action, like attacking an enemy when there is critical chance. So, it's not that safe if your player knows what he's doing.
+
+- Save Points: Save points make it so that players may need to load and then go through a long part of game content in order to get a reroll, which may make them discouraged about keeping repeating and rerolling.
+
+![](capture_03012008_231748.jpg)
+
+- Suspend save/Quicksave: This method consists on deleting the save right after you load, so there is no way to re-roll something. The downside to this is that if the game is not exited properly (the console/computer is turned off, the game crashes...), all progress is lost. To semi-solve this, you can make the player unable to reload a save he just loaded, but not eliminate it from the system memory. Thus, if the game is exited promptly, you can give him the option to reload from the last loaded save, but then again he might turn off the console manually to get his re-rolls.
+
+![](Fire_Emblem_Shin_Monsho_no_Nazo_Hikari_to_Kage_no_Eiyu_en__19794.png.67f67d5c6a909fb4466da02d1f231651.png)
+
+- Limiting saves: Associating saving with an in-game resource, like the ink ribbons in early Resident Evil games. The problem with this is that the player will then save more cautiously, and not always, so if he dies unexpectedly he might have to repeat a long part because there was no way to know that there was danger there. Unless the game tells them, which lowers the challenge by making the player know what to expect.
+
+![](image.jpg)
 
 ## How to balance a game
 
@@ -64,13 +88,13 @@ In order to raise the amount of skill required to win in a game, we can substrac
 
 Something that you should avoid in your game is to have a "dominant strategy", a "best move". For instance, you can have 2 items on a game, one gives you +30 max health, and the other one +30 resistance. If we know that the formula for damage is, say: damage = attack - 0.7 x resistance, we can calculate how much of that resistance fares as "effective" health. In the end, that's what it is, resistance keeps you from being harmed, therefore it's like having more health. For each attack, the damage will be reduced by 21 points, so if the character is attacked twice, your deffense will mitigate 42 damage points. In only two attacks, the better resistance has already given us more effective health than the +30 health item. So, we can confirm that the +30 resistance item is considerably better than the +30 health one, therefore it's the dominant strategy, its the "solution" of this part of the game.
 
-
+![](Ability_Screen_KHII.png)
 
 This hurts the gameplay so much because, first of all, a player that knows this will always have an advantage over a newcomer or just someone who doesn't know that, but also making an item much better than the other makes the last one essentially useless, and why would you want to give an option to players if one is clearly better and eventually no one will pick the weaker one? The only case where this can be used is when you want the players to solve a certain part of the game to advance forward or get some loot, for example. You can award them for taking the better choice, as if it was a puzzle.
 
-
-
 Now, having dominant strategies is something that is bound to happen, and really hard to avoid if your game system is complex and elaborated. This is why multiplayer games keep releasing patches constantly to balance the game: they tend to have really deep and/or extensive game systems, and checking every possible combination in order to find what could possibly be a dominant strategy would be time consuming. The way to adress this problem is by testing and/or getting feedback from players, or maybe just simply watch them play. In your fighting game, is there any move that players tend to spam, and feels really powerful? Think of a countermeasure to that attack, maybe it can be blocked and its recovery is so long that you can get attacked first, or maybe there is a special move that can counter it. Then, maybe that special move is what gets spammed, so think of a countermeasure to that, too. Eventually, you will have a system with intransitive mechanics: all of the movements have the same (or a really similar) value, because each one has balanced strengths and weaknesses.
+
+![](sun-and-moon-type-chart-2.jpg)
 
 ### Situational Balance
 
@@ -84,10 +108,10 @@ In some cases, we can even give numerical values to the benefits that an option 
 
 However, there are times where we don't want both sides to be equally powered, and that's where perfect imbalance gets into play.
 
-
+![](evolve-screen-1.0.jpg)
 
 Here is a video from ExtraCredits that explains the topic really well.
 
-
+![](https://www.youtube.com/watch?v=e31OSVZF77w)
 
 ----------
